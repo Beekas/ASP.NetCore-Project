@@ -1,8 +1,24 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+    ViewData["Title"] = "LogoPage";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Logo page</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <img src="~/Images/bulboff.jpg" class="logo" alt="logo" />
+    <input type="button" value="Clickme" class="btn btn-danger" />
+    <img src="~/MyStaticFiles/a.jpg" />
+    <h1 class="h1">My name is bikash katuwal</h1>
+</body>
+<script src="~/lib/jquery/jquery.js"></script>
+</html>
+<script>
+    $(document).ready(function () {
+        alert("My name is bikash");
+    });
+</script>
